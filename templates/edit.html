@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>New</title>
+</head>
+<body>
+    <form action="/edit/TITLE" method="post" accept-charset="utf-8">
+        <label for="title-field">标题</label>
+        <input type="text" name="title" value="TITLE">
+        <label for="content-field">内容</label>
+        <textarea name="content" rows="8" cols="40">CONTENT</textarea>
+        <input name="_method" type="hidden" value="put" />
+        <input type="submit" value="更新">
+    </form>
+    <form action="/edit/TITLE" method="post" accept-charset="utf-8">
+        <input name="_method" type="hidden" value="delete" />
+        <input type="submit" value="删除">
+    </form>
+</body>
+</html>
